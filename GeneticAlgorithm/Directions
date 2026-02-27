@@ -1,0 +1,6 @@
+namespace GeneticLibrary
+{
+    public enum directions {
+        NORTH =0, SOUTH=1, WEST=2, EAST=3, PICKUP=4, NOTHING=5,RANDOM=6;
+    }
+}
