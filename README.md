@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿## Tasks that must be done
 
 
@@ -110,23 +109,23 @@ The following items are provided to assist you in developing Robby:
 -	RobbyHelper
 -	A helper class with several useful methods
 
-	Notice the ScoreForAllele method, which takes a test grid and a IChromosome to determine the fitness of Robby’s action
+	Notice the ScoreForAllele method, which takes a test grid and an IChromosome to determine the fitness of Robby’s action
 
 # Console Application
-The console application will be responsible for creating the text files representing the different iterations of the GA by calling the GeneticAlgorithm library. It must provide a user interface that prompts the user where to save the text files and provides input parameters for the generation. The application should print out the progress of the solution generation using the appropriate event. Additionally, there should be a way to stop the progress of the generation from the UI.
+The console application will be responsible for creating text files representing different GA iterations by calling the GeneticAlgorithm library. It must provide a user interface that prompts the user where to save the text files and provides input parameters for the generation. The application should print out the progress of the solution generation using the appropriate event. Additionally, there should be a way to stop the generation process from the UI.
 Graphical Simulation
-After generating the possible solutions using RobbyIterationGenerator, the MonoGame project will display Robby’s strategy for these generations so to visualize the improvement. MonoGame will take care of the game loop, updates, and drawing. 
+After generating the possible solutions using RobbyIterationGenerator, the MonoGame project will display Robby’s strategy for these generations to visualize the improvement. MonoGame will handle the game loop, updates, and drawing. 
 Project setup
 Ensure you rename your Game1.cs to RobbyVisualizerGame.cs
-You will need a reference to your RobbyTheRobot project since you will use ScoreForAllele method and GenerateRandomTestGrid. 
+You will need a reference to your RobbyTheRobot project since you will use the ScoreForAllele method and the GenerateRandomTestGrid. 
 
 # Logic
 Within the game project, you will add a SimulationSprite class to represent the drawing on screen.
 The MonoGame application must provide a way for users to select the folder containing the solutions to be run. The files should be loaded into the program and run. 
-In each update (after a counter throttles), it will perform the required move, and update the score. Use the ScoreForAllele method to calculate the score on each Update. 
-The Draw method draws the images and writes the fitness and moves. All pngs should be 32 x 32, and these dimensions can be used to calculate where to draw each png. For example, to draw a can at position [x,y], the Draw method will look something like:
+In each update (after a counter is throttled), it will perform the required move and update the score. Use the ScoreForAllele method to calculate the score on each Update. 
+The Draw method draws the images and writes the fitness and moves. All PNGs should be 32 x 32, and these dimensions can be used to calculate where to draw each PNG. For example, to draw a can at position [x,y], the Draw method will look something like:
 spriteBatch.Draw(imageCan, new Rectangle(x * 32, y * 32, 32, 32), Color.White);
-(nb: the last argument indicates the colour to tint. Color.White means no tinting). 
+(nb: the last argument indicates the colour to tint. Color. vnmbvnbWhite means no tinting). 
 
 # Team Coding Standards and Practices
 This project must be done in the teams assigned. As seen in previous semesters each individual person must have their own feature branches to which they will contribute:
@@ -152,6 +151,7 @@ Internal classes can be tested provided you indicate to the assembly that the te
     <_Parameter1>$(MSBuildProjectName)Tests</_Parameter1>
   </AssemblyAttribute>
 </ItemGroup>
+
 =======
 ﻿## Tasks that must be done
 
